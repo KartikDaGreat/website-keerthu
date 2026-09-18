@@ -1,0 +1,4 @@
+# Source documents (contain private contact details)
+*.docx
+*.pdf
+.vercel
