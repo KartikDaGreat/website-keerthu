@@ -199,6 +199,15 @@ h2 {
 .ph-b img { aspect-ratio: 1 / 1.1; }
 .ph figcaption { font-size: 0.8125rem; color: var(--muted); margin-top: 8px; }
 
+.visits { margin: 0 0 40px; }
+.visits-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.visits img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 3px; }
+.visits figcaption { font-size: 0.8125rem; color: var(--muted); margin-top: 8px; }
+@media (max-width: 600px) {
+  .visits-row { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .visits img:first-child { grid-column: 1 / -1; aspect-ratio: 4 / 3; object-position: center 60%; }
+}
+
 .player iframe { display: block; border: 0; border-radius: 12px; background: var(--paper-deep); }
 
 .skills {
